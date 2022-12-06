@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/imgEboueur"
+        android:layout_width="97dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="316dp"
+        android:src="@drawable/eboueur"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtEboueur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="12dp"
+        android:text="Les éboueurs"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgEboueur" />
+
+    <ImageView
+        android:id="@+id/imgPoubelle"
+        android:layout_width="97dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="316dp"
+        android:src="@drawable/poubelle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPoubelle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="12dp"
+        android:text="les  poubelle"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/txtEboueur"
+        app:layout_constraintTop_toBottomOf="@+id/imgPoubelle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

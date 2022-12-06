@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Marwa/OneDrive/Bureau/tuto/dev_mobile/Gestion_Poubelle_Intelligente/app/src/main/res/drawable/forme.xml" value="0.157" />
+        <entry key="..\:/Users/Marwa/OneDrive/Bureau/tuto/dev_mobile/Gestion_Poubelle_Intelligente/app/src/main/res/drawable/forme2.xml" value="0.157" />
+        <entry key="..\:/Users/Marwa/OneDrive/Bureau/tuto/dev_mobile/Gestion_Poubelle_Intelligente/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.157" />
+        <entry key="..\:/Users/Marwa/OneDrive/Bureau/tuto/dev_mobile/Gestion_Poubelle_Intelligente/app/src/main/res/drawable/ic_baseline_arrow_right_24.xml" value="0.157" />
+        <entry key="..\:/Users/Marwa/OneDrive/Bureau/tuto/dev_mobile/Gestion_Poubelle_Intelligente/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.157" />
+        <entry key="..\:/Users/Marwa/OneDrive/Bureau/tuto/dev_mobile/Gestion_Poubelle_Intelligente/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.157" />
+        <entry key="..\:/Users/Marwa/OneDrive/Bureau/tuto/dev_mobile/Gestion_Poubelle_Intelligente/app/src/main/res/drawable/ic_first_24.xml" value="0.157" />
+        <entry key="..\:/Users/Marwa/OneDrive/Bureau/tuto/dev_mobile/Gestion_Poubelle_Intelligente/app/src/main/res/drawable/ic_last_24.xml" value="0.157" />
+        <entry key="..\:/Users/Marwa/OneDrive/Bureau/tuto/dev_mobile/Gestion_Poubelle_Intelligente/app/src/main/res/drawable/ic_left_24.xml" value="0.157" />
+        <entry key="..\:/Users/Marwa/OneDrive/Bureau/tuto/dev_mobile/Gestion_Poubelle_Intelligente/app/src/main/res/layout/activity_authen.xml" value="0.264" />
+        <entry key="..\:/Users/Marwa/OneDrive/Bureau/tuto/dev_mobile/Gestion_Poubelle_Intelligente/app/src/main/res/layout/activity_authent.xml" value="0.21875" />
+        <entry key="..\:/Users/Marwa/OneDrive/Bureau/tuto/dev_mobile/Gestion_Poubelle_Intelligente/app/src/main/res/layout/activity_details_poubelle.xml" value="0.264" />
+        <entry key="..\:/Users/Marwa/OneDrive/Bureau/tuto/dev_mobile/Gestion_Poubelle_Intelligente/app/src/main/res/layout/activity_eboueur.xml" value="0.264" />
+        <entry key="..\:/Users/Marwa/OneDrive/Bureau/tuto/dev_mobile/Gestion_Poubelle_Intelligente/app/src/main/res/layout/activity_home.xml" value="0.264" />
+        <entry key="..\:/Users/Marwa/OneDrive/Bureau/tuto/dev_mobile/Gestion_Poubelle_Intelligente/app/src/main/res/layout/activity_home_eboueur.xml" value="0.264" />
+        <entry key="..\:/Users/Marwa/OneDrive/Bureau/tuto/dev_mobile/Gestion_Poubelle_Intelligente/app/src/main/res/layout/activity_main.xml" value="0.23550724637681159" />
+        <entry key="..\:/Users/Marwa/OneDrive/Bureau/tuto/dev_mobile/Gestion_Poubelle_Intelligente/app/src/main/res/layout/activity_poubelle.xml" value="0.264" />
+        <entry key="..\:/Users/Marwa/OneDrive/Bureau/tuto/dev_mobile/Gestion_Poubelle_Intelligente/app/src/main/res/layout/activity_rechercher_eboueur.xml" value="0.2" />
+        <entry key="..\:/Users/Marwa/OneDrive/Bureau/tuto/dev_mobile/Gestion_Poubelle_Intelligente/app/src/main/res/layout/activity_splash.xml" value="0.264" />
+        <entry key="..\:/Users/Marwa/OneDrive/Bureau/tuto/dev_mobile/Gestion_Poubelle_Intelligente/app/src/main/res/layout/activity_splash2.xml" value="0.21875" />
+        <entry key="..\:/Users/Marwa/OneDrive/Bureau/tuto/dev_mobile/Gestion_Poubelle_Intelligente/app/src/main/res/layout/item_poubelle.xml" value="0.6" />
+        <entry key="..\:/Users/Marwa/OneDrive/Bureau/tuto/dev_mobile/Gestion_Poubelle_Intelligente/app/src/main/res/menu/menu_eboueur.xml" value="0.264" />
+        <entry key="..\:/Users/Marwa/OneDrive/Bureau/tuto/dev_mobile/Gestion_Poubelle_Intelligente/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.157" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.264" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

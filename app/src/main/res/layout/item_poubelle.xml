@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/txtAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:textColor="#000000"
+        android:text="Adresse Poubelle"
+        app:layout_constraintStart_toEndOf="@+id/imgP"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgP"
+        android:layout_width="103dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/poub" />
+
+    <TextView
+        android:id="@+id/txtValAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:textStyle="bold"
+        android:text=""
+        android:textColor="#000"
+        app:layout_constraintStart_toEndOf="@+id/imgP"
+        app:layout_constraintTop_toBottomOf="@+id/txtAd" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="Ouvrir la poubelle"
+        app:layout_constraintStart_toEndOf="@+id/imgP"
+        app:layout_constraintTop_toBottomOf="@+id/txtValAd" />
+
+    <TextView
+        android:id="@+id/txtPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="43dp"
+        android:text="20"
+        android:textColor="#000"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imgP"
+        app:layout_constraintTop_toTopOf="@+id/imgP" />
+
+    <TextView
+        android:id="@+id/txtp"
+        android:layout_width="9dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="43dp"
+        android:text="%"
+        android:textColor="#000"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/txtPercent"
+        app:layout_constraintTop_toTopOf="@+id/imgP" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

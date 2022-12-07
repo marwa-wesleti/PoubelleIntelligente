@@ -19,7 +19,7 @@ public class DetailsPoubelle extends AppCompatActivity {
     private ArrayList<Item> item;
     private Cursor cu;
     private TextView txtWelc;
-    MqttHelper Helper;
+
 
 
 
@@ -28,6 +28,7 @@ public class DetailsPoubelle extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details_poubelle);
+
         recyclerView=(RecyclerView) findViewById(R.id.recycler);
         txtWelc=(TextView) findViewById(R.id.txtWelcom);
         Intent intent=getIntent();
@@ -47,32 +48,8 @@ public class DetailsPoubelle extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(DetailsPoubelle.this));
         recyclerView.setAdapter(adapte);
 
-        private void startMqtt(){
-            Helper = new MqttHelper(getApplicationContext());
-            Helper.mqttAndroidClient.setCallback(new MqttCallbackExtended() {
-                @Override
-                public void connectComplete(boolean b, String s) {
-                    Log.w("Debug","Connected");
-                }
 
-                @Override
-                public void connectionLost(Throwable throwable) {
 
-                }
-
-                @Override
-                public void messageArrived(String topic, MqttMessage mqttMessage) throws Exception {
-                    Log.w("Debug",mqttMessage.toString());
-                    dataReceived.setText(mqttMessage.toString());
-                    mChart.addEntry(Float.valueOf(mqttMessage.toString()));
-                }
-
-                @Override
-                public void deliveryComplete(IMqttDeliveryToken iMqttDeliveryToken) {
-
-                }
-            });
-        }
 
 
 
@@ -80,4 +57,8 @@ public class DetailsPoubelle extends AppCompatActivity {
     }
 
 
-}
+    }
+
+
+
+

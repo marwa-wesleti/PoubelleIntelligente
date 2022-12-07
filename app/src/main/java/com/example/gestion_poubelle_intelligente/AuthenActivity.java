@@ -9,15 +9,14 @@ import android.database.sqlite.SQLiteStatement;
 import android.os.Bundle;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
-import android.util.Log;
+
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
+
 import android.widget.Toast;
 
-import java.util.Currency;
 
 public class AuthenActivity extends AppCompatActivity {
     EditText edUserName,edPassUser;
@@ -71,6 +70,7 @@ public class AuthenActivity extends AppCompatActivity {
     public void connecterEb(SQLiteDatabase db) {
         cu = db.rawQuery("select * from eboueur", null);
         cu.moveToFirst();
+        if  (cu.getCount()>0){
         int i = 0;
         while (i < cu.getCount()) {
             if (edPassUser.getText().toString().equals(cu.getString(2))) {
@@ -83,8 +83,11 @@ public class AuthenActivity extends AppCompatActivity {
                 break;
             }
 
+
             cu.moveToNext();
             i++;
+        }
+            Toast.makeText(this, "aucun eboueur existe déja", Toast.LENGTH_SHORT).show();
         }
         
 

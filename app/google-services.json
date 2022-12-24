@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "665659297262",
+    "firebase_url": "https://poubelleapp-fabb3-default-rtdb.firebaseio.com",
+    "project_id": "poubelleapp-fabb3",
+    "storage_bucket": "poubelleapp-fabb3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:665659297262:android:5bbf1c6f446370cfed52ff",
+        "android_client_info": {
+          "package_name": "com.example.gestion_poubelle_intelligente"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "665659297262-2ocbesgqrojf41nfp2187rgdh5vvnr3h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gestion_poubelle_intelligente",
+            "certificate_hash": "066fb9d0dfd140c93f5f3d5aa89d7c42c6321584"
+          }
+        },
+        {
+          "client_id": "665659297262-asprqrmfif9e6n7qto0ovucqt96vstmk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW6GrUMN71X6Z7pk3qBsqK8L6xH27tSWI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "665659297262-asprqrmfif9e6n7qto0ovucqt96vstmk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

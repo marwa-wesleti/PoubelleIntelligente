@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".PoubelleActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout1"
+        android:layout_width="312dp"
+        android:layout_height="185dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="296dp"
+        android:background="@drawable/forme2"
+        android:backgroundTint="@color/transgris"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtAdre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:text="Adresse Poubelle"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout1" />
+
+        <EditText
+            android:id="@+id/edAdrePo"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/forme2"
+            android:color="#000000"
+            android:ems="8"
+            android:text=" "
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/txtAdre"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtEtat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="15dp"
+            android:text="Etat poubelle"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edAdrePo" />
+
+        <EditText
+            android:id="@+id/etatPo"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/forme2"
+            android:color="#000000"
+            android:ems="8"
+            android:text=" "
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/txtEtat"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/firstPo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="36dp"
+            android:backgroundTint="@color/transgris"
+            android:src="@drawable/ic_first_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtEtat" />
+
+        <ImageButton
+            android:id="@+id/previousPo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="36dp"
+            android:backgroundTint="@color/transgris"
+            app:layout_constraintStart_toEndOf="@+id/firstPo"
+            app:layout_constraintTop_toBottomOf="@+id/txtEtat"
+            app:srcCompat="@drawable/ic_left_24" />
+
+        <ImageButton
+            android:id="@+id/nextPo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="36dp"
+            android:backgroundTint="@color/transgris"
+            app:layout_constraintStart_toEndOf="@+id/previousPo"
+            app:layout_constraintTop_toBottomOf="@+id/txtEtat"
+            app:srcCompat="@drawable/ic_baseline_arrow_right_24" />
+
+        <ImageButton
+            android:id="@+id/lastPo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="36dp"
+            android:backgroundTint="@color/transgris"
+            app:layout_constraintStart_toEndOf="@+id/nextPo"
+            app:layout_constraintTop_toBottomOf="@+id/txtEtat"
+            app:srcCompat="@drawable/ic_last_24" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnsavePo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#0A735E"
+        android:ems="10"
+        android:text="save"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+
+    <ImageView
+        android:id="@+id/imgsearchPo"
+        android:layout_width="42dp"
+        android:layout_height="43dp"
+
+        android:layout_marginTop="160dp"
+        android:backgroundTint="#FFFFFF"
+        android:src="@drawable/ic_baseline_search_24"
+        app:layout_constraintStart_toEndOf="@+id/edSeaEbPo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/updatePo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="16dp"
+
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#ffff"
+        android:src="@drawable/update"
+        app:layout_constraintStart_toEndOf="@+id/addPo"
+        app:layout_constraintTop_toBottomOf="@+id/edSeaEbPo" />
+
+    <ImageView
+        android:id="@+id/addPo"
+        android:layout_width="25dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="248dp"
+
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#ffff"
+        android:src="@drawable/add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edSeaEbPo" />
+
+    <ImageView
+        android:id="@+id/deletePo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#ffff"
+        android:src="@drawable/delete"
+        app:layout_constraintStart_toEndOf="@+id/updatePo"
+        app:layout_constraintTop_toBottomOf="@+id/edSeaEbPo" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="320dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/forme2"
+        android:backgroundTint="@color/transgris"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetEb">
+
+        <EditText
+            android:id="@+id/edNomEbPo"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/forme2"
+            android:color="#000000"
+            android:ems="8"
+            android:text=" "
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/txtNomEbPo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtNomEbPo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="24dp"
+            android:text="Nom Eboueur"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout2" />
+
+        <TextView
+            android:id="@+id/txtTelEbPo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="24dp"
+            android:text="Tel Eboueur"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNomEbPo" />
+
+        <EditText
+            android:id="@+id/EdTelEbPo"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/forme2"
+            android:color="#000000"
+            android:ems="8"
+            android:text=" "
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/txtTelEbPo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgsearchEbPo"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FFFFFF"
+            android:src="@drawable/search"
+            app:layout_constraintStart_toEndOf="@+id/edNomEbPo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/edSeaEbPo"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/forme2"
+        android:backgroundTint="@color/transgris"
+        android:ems="15"
+        android:hint="Taper nom,adresse "
+        android:textColorHint="#000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btncancelPo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#0A735E"
+        android:ems="10"
+        android:text="cancel"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/btnsavePo"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+    <TextView
+        android:id="@+id/txtDetEb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="Détails Eboueur"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout1" />
+
+    <TextView
+        android:id="@+id/txtIdEb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetEb" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

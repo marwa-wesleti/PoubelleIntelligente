@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".RechercherEboueur">
+
+    <TextView
+        android:id="@+id/txtRechNomEb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Nom Eboueur"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRechIdEb" />
+
+    <TextView
+        android:id="@+id/txtRechIdEb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="Id Eboueur"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edSearchNom" />
+
+    <EditText
+        android:id="@+id/edRechNom"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/forme2"
+        android:color="#000000"
+        android:ems="8"
+        android:text=" "
+        android:textColor="@color/white"
+        app:layout_constraintBaseline_toBaselineOf="@id/txtRechNomEb"
+        app:layout_constraintStart_toEndOf="@+id/txtRechNomEb" />
+
+    <ImageButton
+        android:id="@+id/rechPrevious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#ffffff"
+
+        app:layout_constraintLeft_toRightOf="@id/rechFirst"
+        app:layout_constraintTop_toBottomOf="@id/txtRechNomEb"
+        app:srcCompat="@drawable/ic_left_24" />
+
+    <ImageButton
+        android:id="@+id/rechNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#ffffff"
+
+        app:layout_constraintStart_toEndOf="@+id/rechPrevious"
+        app:layout_constraintTop_toBottomOf="@+id/txtRechNomEb"
+        app:srcCompat="@drawable/ic_baseline_arrow_right_24" />
+
+    <EditText
+        android:id="@+id/edSearchNom"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/forme2"
+        android:backgroundTint="@color/transgris"
+        android:ems="15"
+        android:textColor="@color/black"
+        android:hint="Taper nom "
+        android:textColorHint="#000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnValider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:text="vaidate"
+        android:textColor="@color/white"
+        android:backgroundTint="#0A735E"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rechFirst" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:text="cancel"
+        android:textColor="@color/white"
+        android:backgroundTint="#0A735E"
+        app:layout_constraintStart_toEndOf="@+id/btnValider"
+        app:layout_constraintTop_toBottomOf="@+id/rechFirst" />
+
+    <ImageButton
+        android:id="@+id/rechLast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#ffffff"
+
+        app:layout_constraintStart_toEndOf="@+id/rechNext"
+        app:layout_constraintTop_toBottomOf="@+id/txtRechNomEb"
+        app:srcCompat="@drawable/ic_last_24" />
+
+    <ImageView
+        android:id="@+id/imgRech"
+        android:layout_width="42dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/edSearchNom"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/search" />
+
+    <EditText
+        android:id="@+id/edRechId"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="28dp"
+        android:background="@drawable/forme2"
+        android:color="#000000"
+        android:ems="8"
+        android:text=" "
+        android:textColor="@color/white"
+        app:layout_constraintBaseline_toBaselineOf="@id/txtRechIdEb"
+        app:layout_constraintStart_toEndOf="@+id/txtRechIdEb" />
+
+    <EditText
+        android:id="@+id/edRechTel"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/forme2"
+        android:color="#000000"
+        android:ems="8"
+        android:text=" "
+        android:textColor="@color/white"
+        app:layout_constraintBaseline_toBaselineOf="@id/txtRechTelEb"
+        app:layout_constraintStart_toEndOf="@+id/txtRechTelEb" />
+
+    <ImageButton
+        android:id="@+id/rechFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#FFFFFF"
+        android:src="@drawable/ic_first_24"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtRechNomEb" />
+
+    <TextView
+        android:id="@+id/txtRechTelEb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Tel Eboueur"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRechNomEb" />
+</androidx.constraintlayout.widget.ConstraintLayout>

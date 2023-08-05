@@ -1,5 +1,5 @@
 # PoubelleIntelligente
-création d'un systéme de suivie des poubelles à diastance  qui constituer de deux modules : systéme IOT utilisé avec GPS et 2 capteurs utltrasons . application mobile aide la  mmunicipalité et les éboueurs
+création d'un systéme de suivie des poubelles à diastance  qui constituer de deux modules : systéme IOT utilisé avec GPS et 2 capteurs utltrasons . application mobile aide la  mmunicipalité et les éboueurs à le controller
 
 ![WhatsApp Image 2023-08-05 at 21 51 51](https://github.com/marwa-wesleti/PoubelleIntelligente/assets/110094715/f4aa1158-3355-4541-8bcb-149f9dcc3214)
 
